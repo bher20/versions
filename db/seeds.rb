@@ -19,10 +19,10 @@ app = Application.create    :name         => 'Super Cool App',
                             :comment      => 'This app is so cool!',
                             :user         =>  profile.user
 
-app.versions.create         :number       => '1.0.0',
+app.versions.create         :number       => Versionomy.parse('1.0.0'),
                             :change_log   => ['Added: Cool new icon', 'Changed: Cool sounding name'],
                             :comment      => 'Sweet version'
 
-app.versions.create         :number       => '1.1.0',
+app.versions.create         :number       => Versionomy.parse('1.1.0'),
                             :change_log   => ['Added: Cool new icon splash screen'],
                             :comment      => 'Sweet splash screen version'

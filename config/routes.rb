@@ -5,6 +5,7 @@ Versions::Application.routes.draw do
   resources :versions
   resources :applications do
     get 'get_latest_version'
+    get 'newer_version'
     resources :versions
   end
 

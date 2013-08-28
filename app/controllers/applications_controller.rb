@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show, :get_latest_version]
+  before_filter :authenticate, :except => [:index, :show, :get_latest_version, :newer_version]
 
   # GET /applications
   # GET /applications.json
@@ -25,15 +25,36 @@ class ApplicationsController < ApplicationController
 
   def get_latest_version
     @application = Application.find_by_guid(params[:application_id])
-    @version = @application.versions.first!
+    version = @application.versions.first!
 
     respond_to do |format|
       #if found
-        format.html { redirect_to @version }
-        format.json { render json: @application.versions.first }
+        format.html { redirect_to version }
+        format.json { render json: get_version_hash(version) }
       #else
        # format.json { render json: @application.errors, status: :unprocessable_entity }
       #end
+    end
+  end
+
+  def newer_version
+    @application = Application.find_by_guid(params[:application_id])
+    supplied_version = params[:version]
+
+    newer = nil
+    @application.versions.each do |v|
+      if v.is_newer? supplied_version
+        newer = v
+      end
+    end
+
+
+    respond_to do |format|
+      if newer != nil
+        format.json { render json: get_version_hash(newer) }
+      else
+        format.json { render json: false }
+      end
     end
   end
 
@@ -96,4 +117,15 @@ class ApplicationsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+    def get_version_hash(version)
+      tmp_version = {
+          :change_log => version.change_log,
+          :number => version.number.to_s,
+          :created => version.created_at
+      }
+
+      return tmp_version
+    end
 end

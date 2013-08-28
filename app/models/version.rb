@@ -25,4 +25,13 @@ class Version < ActiveRecord::Base
   def long_title
     "#{version}"
   end
+
+  public
+    def is_newer?(version)
+      if self.number > version
+        true
+      else
+        false
+      end
+    end
 end
