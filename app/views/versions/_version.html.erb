@@ -1,6 +1,6 @@
 <%= div_for version do %>
     <h3>
-      <%= link_to version.number, version %>
+      <%= link_to version.number.to_s, version %>
     <span class='actions'>
        <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',
                    :method => :delete, :remote => true %>

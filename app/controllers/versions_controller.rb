@@ -25,12 +25,7 @@ class VersionsController < ApplicationController
   end
 
   def create
-    version_params = params[:version]
-    version_params[:change_log] = version_params[:change_log].lines.map(&:chomp)
-    version_params[:number] = Versionomy.parse(version_params[:number].chomp)
-
-
-    @version = @application.versions.new(version_params)
+    @version = @application.versions.new(params[:version])
     if @version.save
       respond_to do |format|
         format.html { redirect_to @application, :notice => t('versions.create_success') }
