@@ -1,14 +1,15 @@
 Versions::Application.routes.draw do
-  resources :versions
-
-
+  root :to => "applications#index"
   resources :roles
 
 
   resources :users
 
 
-  resources :applications
+  resources :applications do
+    resources :versions
+  end
+
 
 
   # The priority is based upon order of creation:

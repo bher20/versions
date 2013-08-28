@@ -1,10 +1,11 @@
 class Version < ActiveRecord::Base
-  attr_accessible :application_id, :change_log, :version, :comment
+  attr_accessible :application_id, :change_log, :number, :comment, :application
 
   belongs_to :application
 
-  validates :application_id, :presence => true
-  validates :version, :presence => true
+  validates :number, :presence => true
+
+  serialize :change_log
 
   def long_title
     "#{version}"

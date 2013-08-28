@@ -14,6 +14,20 @@
   <b>Guid:</b>
   <%= @application.guid %>
 </p>
+<br />
+<br />
+
+<h3>Versions</h3>
+<div id="comments">
+  <%= render @application.versions %>
+  <br />
+  <br />
+  <br />
+</div>
+
+
+<h4>Create New Version</h4>
+<%= render :file => 'versions/new' %>
 
 
 <%= link_to 'Edit', edit_application_path(@application) %> |

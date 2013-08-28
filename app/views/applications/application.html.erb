@@ -1,0 +1,11 @@
+<%= div_for application do %>
+    <h3>
+      <%= link_to application.title, application %>
+      <span class='actions'>
+      <%= link_to "Edit", edit_application_path(application) %>
+        <%= link_to "Delete", application, :confirm => "Are you sure?",
+                    :method => :delete %>
+    </span>
+    </h3>
+    <%= application.body %>
+<% end %>
