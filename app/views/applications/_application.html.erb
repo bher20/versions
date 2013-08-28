@@ -2,9 +2,9 @@
     <h3>
       <%= link_to application.title, application %>
       <span class='actions'>
-      <%= link_to 'Edit', edit_application_path(application) %>
-        <%= link_to 'Delete', application, :confirm => 'Are you sure?',
-                    :method => :delete %>
+      <%= link_to t('general.edit'), edit_application_path(application) %>
+        <%= link_to t('general.delete'), application,
+                    :confirm => t('general.are_you_sure'), :method => :delete %>
     </span>
     </h3>
     <%= simple_format application.body %>

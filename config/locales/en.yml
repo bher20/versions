@@ -2,4 +2,58 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  general:
+    are_you_sure: Are you sure?
+
+    back: Back
+    cancel: Cancel
+    create: Create
+    delete: Delete
+    edit: Edit
+    editing: Editing
+    footer: A version management web service
+    search: Search
+    show: Show
+    title: Versions
+    update: Update
+    or: or
+  application:
+    access_denied: Please log in to continue
+  applications:
+    editing_application: Editing Applicaiton
+    listing_applications: Listing Applicaitons
+    new_application: New Applicaiton
+    application: application
+    create_success: Applicaiton was successfully created.
+    update_success: Applicaiton was successfully updated.
+    applications: applicaitons
+  users:
+    new_user: New user
+    edit_password: Edit Password
+    editing_user: Editing user
+    create_success: User successfully added.
+    update_success: Updated user information successfully.
+    destroy_success: User deleted
+  sessions:
+    name: Name
+    password: Password
+    login: Login
+    logout: Logout
+    login_successful: Logged in successfully
+    invalid_login: Invalid login/password combination
+    logout_success: You successfully logged out
+  versions:
+    name: Name
+    versions: Versions
+    new_version: New version
+    create_success: Version was successfully created.
+    create_failure: Unable to add version
+    destroy_success: Version deleted
+    add: Add
+  roles:
+    name: Name
+    comment: Comment
+    new_role: New role
+    create_success: Role was successfully created.
+    create_failure: Unable to add role
+    destroy_success: Role deleted

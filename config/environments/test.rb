@@ -34,4 +34,17 @@ Versions::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  # Email configuration
+  config.action_mailer.raise_delivery_errors = true
+
+  # Gmail SMTP server setup
+  ActionMailer::Base.smtp_settings = {
+      :address => "smtp.gmail.com",
+      :enable_starttls_auto => true,
+      :port => 587,
+      :authentication => :plain,
+      :user_name => "beginningrails@gmail.com",
+      :password => 'pleasechange'
+  }
 end
