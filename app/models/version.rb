@@ -8,7 +8,13 @@ class Version < ActiveRecord::Base
   serialize :change_log
 
   before_create :parse_change_log
+  before_save :number_to_s
   after_find :parse_number, :parse_change_log
+
+
+  def number_to_s
+    self.number = self.number.to_s
+  end
 
   def parse_number
     if self.number.class != Versionomy

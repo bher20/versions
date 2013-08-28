@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063757d2-4bde-4735-807c-35be0e783ad7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/applications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/version.rb" afterPath="$PROJECT_DIR$/app/models/version.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377728452654" ignored="false" />
+    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377730544108" ignored="false" />
     <file path="/database.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377701056022" ignored="false" />
     <file path="/20130828144747_create_applications.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705122893" ignored="false" />
     <file path="/20130828152026_create_versions.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377703338066" ignored="false" />
     <file path="/application.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377726487243" ignored="false" />
-    <file path="/version.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377729964465" ignored="false" />
+    <file path="/version.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377730722401" ignored="false" />
     <file path="/profile.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377709732583" ignored="false" />
     <file path="/role.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705464348" ignored="false" />
     <file path="/user.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377707535415" ignored="false" />
@@ -64,7 +62,16 @@
       <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="45" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="explain.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/explain.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="45" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,7 +114,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="62" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.5311973">
+            <state line="10" column="35" selection-start="512" selection-end="512" vertical-scroll-proportion="0.2529511">
               <folding />
             </state>
           </provider>
@@ -144,8 +151,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/helpers/versions_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/versions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/version.rb" />
         <option value="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/version.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
@@ -758,7 +765,11 @@
       <created>1377728453419</created>
       <updated>1377728453419</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changed: Seed file now creates Version.number as a Versionomy object.&#10;Added: New action to applications_controller newer_version.">
+      <created>1377730545672</created>
+      <updated>1377730545672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -828,7 +839,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed: Version.number is now a Versionomy object." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed: Seed file now creates Version.number as a Versionomy object.&#10;Added: New action to applications_controller newer_version." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -848,6 +859,7 @@
     <MESSAGE value="Added: Missing files." />
     <MESSAGE value="Fixed: Javascript adding and deleting of versions." />
     <MESSAGE value="Changed: Version.number is now a Versionomy object." />
+    <MESSAGE value="Changed: Seed file now creates Version.number as a Versionomy object.&#10;Added: New action to applications_controller newer_version." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -862,18 +874,16 @@
           <line>51</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/version.rb</url>
+          <line>15</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p195/gems/activesupport-3.2.13/lib/active_support/callbacks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="408" column="0" selection-start="13443" selection-end="13443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p195/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="0" selection-start="2494" selection-end="2494" vertical-scroll-proportion="0.0">
@@ -944,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/versions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="5" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
@@ -979,9 +982,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-2.0.0-p195/gems/activerecord-3.2.13/lib/active_record/explain.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="45" selection-start="1665" selection-end="1665" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="62" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.5311973">
+        <state line="10" column="35" selection-start="512" selection-end="512" vertical-scroll-proportion="0.2529511">
           <folding />
         </state>
       </provider>
