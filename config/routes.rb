@@ -1,4 +1,13 @@
 Versions::Application.routes.draw do
+  resources :versions
+
+
+  resources :roles
+
+
+  resources :users
+
+
   resources :applications
 
 
