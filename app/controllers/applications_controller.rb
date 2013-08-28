@@ -1,4 +1,6 @@
 class ApplicationsController < ApplicationController
+  before_filter :authenticate, :except => [:index, :show]
+
   # GET /applications
   # GET /applications.json
   def index
@@ -34,13 +36,13 @@ class ApplicationsController < ApplicationController
 
   # GET /applications/1/edit
   def edit
-    @application = Application.find(params[:id])
+    @application = current_user.application.find(params[:id])
   end
 
   # POST /applications
   # POST /applications.json
   def create
-    @application = Application.new(params[:application])
+    @application = current_user.application.find(params[:id])
 
     respond_to do |format|
       if @application.save
@@ -56,7 +58,7 @@ class ApplicationsController < ApplicationController
   # PUT /applications/1
   # PUT /applications/1.json
   def update
-    @application = Application.find(params[:id])
+    @application = current_user.application.find(params[:id])
 
     respond_to do |format|
       if @application.update_attributes(params[:application])
@@ -72,7 +74,7 @@ class ApplicationsController < ApplicationController
   # DELETE /applications/1
   # DELETE /applications/1.json
   def destroy
-    @application = Application.find(params[:id])
+    @application = current_user.application.find(params[:id])
     @application.destroy
 
     respond_to do |format|

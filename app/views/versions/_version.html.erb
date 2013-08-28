@@ -3,7 +3,7 @@
       <%= version.number %>
     <span class='actions'>
        <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',
-                   :method => :delete %>
+                   :method => :delete, :remote => true %>
     </span>
     </h3>
     <% version.change_log.each do |c| %>

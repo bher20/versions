@@ -1,4 +1,5 @@
-<%= form_for([@application, @application.versions.new]) do |f| %>
+<%= form_for([@application, @application.versions.new], :remote => true,
+             :html => {:style => 'display: none;'}) do |f| %>
     <div class="field">
       <%= f.label :number %><br />
       <%= f.text_field :number %>

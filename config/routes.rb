@@ -1,14 +1,14 @@
 Versions::Application.routes.draw do
-  root :to => "applications#index"
+  root :to => 'applications#index'
   resources :roles
-
-
   resources :users
-
-
   resources :applications do
     resources :versions
   end
+
+  resource :session
+  match '/login' => 'sessions#new', :as => 'login'
+  match '/logout' => 'sessions#destroy', :as => 'logout'
 
 
 
