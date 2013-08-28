@@ -17,17 +17,16 @@
 <br />
 <br />
 
-<h3>Versions</h3>
+
+<h3>Versions
+<span class='actions'>
+    <%= link_to 'New', new_application_version_path(@application, :format => :js),
+            :remote => true, :id => 'new_version_link' %>
+</span></h3>
+
 <div id='versions'>
   <%= render @application.versions %>
-  <br />
-  <br />
-  <br />
 </div>
-
-
-<%= link_to 'New Version', new_application_version_path(@application, :format => :js),
-            :remote => true, :id => 'new_version_link' %>
 
 <br />
 <br />

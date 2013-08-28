@@ -6,6 +6,7 @@ class Version < ActiveRecord::Base
   validates :number, :presence => true
 
   serialize :change_log
+  serialize :number
 
   def long_title
     "#{version}"

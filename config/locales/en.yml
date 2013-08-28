@@ -27,6 +27,7 @@ en:
     create_success: Applicaiton was successfully created.
     update_success: Applicaiton was successfully updated.
     applications: applicaitons
+    find_failure: Unable to find application
   users:
     new_user: New user
     edit_password: Edit Password
@@ -39,6 +40,7 @@ en:
     password: Password
     login: Login
     logout: Logout
+    login_message: Please login to continue
     login_successful: Logged in successfully
     invalid_login: Invalid login/password combination
     logout_success: You successfully logged out

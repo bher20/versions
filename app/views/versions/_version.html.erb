@@ -1,13 +1,10 @@
 <%= div_for version do %>
     <h3>
-      <%= version.number %>
+      <%= link_to version.number, version %>
     <span class='actions'>
        <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',
                    :method => :delete, :remote => true %>
     </span>
     </h3>
-    <% version.change_log.each do |c| %>
-    <%= c %>
-    <br />
-    <% end %>
+    <%= change_log_to_html version %>
 <% end %>

@@ -12,7 +12,13 @@ class Application < ActiveRecord::Base
     "#{name}"
   end
 
+  def to_param  # overridden
+    guid
+  end
+
   def generate_guid
-    self.guid ||= UUIDTools::UUID.random_create.to_s
+    if self.guid == nil
+      self.guid ||= UUIDTools::UUID.random_create.to_s
+    end
   end
 end

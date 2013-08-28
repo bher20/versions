@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show]
+  before_filter :authenticate, :except => [:index, :show, :get_latest_version]
 
   # GET /applications
   # GET /applications.json
@@ -15,11 +15,25 @@ class ApplicationsController < ApplicationController
   # GET /applications/1
   # GET /applications/1.json
   def show
-    @application = Application.find(params[:id])
+    @application = Application.find_by_guid(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @application }
+    end
+  end
+
+  def get_latest_version
+    @application = Application.find_by_guid(params[:application_id])
+    @version = @application.versions.first!
+
+    respond_to do |format|
+      #if found
+        format.html { redirect_to @version }
+        format.json { render json: @application.versions.first }
+      #else
+       # format.json { render json: @application.errors, status: :unprocessable_entity }
+      #end
     end
   end
 
@@ -74,7 +88,7 @@ class ApplicationsController < ApplicationController
   # DELETE /applications/1
   # DELETE /applications/1.json
   def destroy
-    @application = current_user.application.find(params[:id])
+    @application = current_user.application(params[:id])
     @application.destroy
 
     respond_to do |format|

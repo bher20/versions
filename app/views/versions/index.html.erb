@@ -1,0 +1,23 @@
+<h1>Listing versions</h1>
+
+<table>
+  <tr>
+    <th>Application</th>
+    <th>Number</th>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @versions.each do |version| %>
+      <tr>
+        <td><%= link_to version.application.name, version.application_path %></td>
+        <td><%= version.number %></td>
+        <td><%= version.comment %></td>
+        <td><%= version.guid %></td>
+        <td><%= link_to 'Show', version %></td>
+        <td><%= link_to 'Destroy', version, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>

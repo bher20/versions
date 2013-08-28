@@ -1,0 +1,22 @@
+<p id='notice'><%= notice %></p>
+
+<p>
+  <b>Application:</b>
+  <%= link_to @version.application.name, @version.application %>
+</p>
+<p>
+  <b>Number:</b>
+  <%= @version.number %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @version.comment %>
+</p>
+
+<p>
+  <b>Change Log:</b>
+  <%= simple_format change_log_to_html @version %>
+</p>
+<br />
+<br />
