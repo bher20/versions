@@ -1,0 +1,10 @@
+Thu, 29 Aug 2013 12:53:24 -0400
+doc/README_FOR_APP	Wed, 28 Aug 2013 10:16:24 -0400
+app/controllers/application_controller.rb	Thu, 29 Aug 2013 12:43:43 -0400
+app/controllers/applications_controller.rb	Thu, 29 Aug 2013 12:47:27 -0400
+app/controllers/versions_controller.rb	Thu, 29 Aug 2013 12:47:17 -0400
+app/helpers/application_helper.rb	Wed, 28 Aug 2013 14:54:08 -0400
+app/helpers/applications_helper.rb	Wed, 28 Aug 2013 10:50:33 -0400
+app/helpers/versions_helper.rb	Wed, 28 Aug 2013 18:40:55 -0400
+app/models/application.rb	Thu, 29 Aug 2013 11:43:51 -0400
+app/models/version.rb	Wed, 28 Aug 2013 19:31:41 -0400
