@@ -2,7 +2,9 @@ Versions::Application.routes.draw do
   root :to => 'applications#index'
 
   resources :roles
-  resources :users
+  resources :users do
+    resource :profile
+  end
   resources :versions
   resources :applications do
     get 'get_latest_version'

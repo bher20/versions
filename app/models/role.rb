@@ -1,5 +1,5 @@
 class Role < ActiveRecord::Base
-  attr_accessible :comment, :name
+  attr_accessible :comment, :name, :admin_role
 
   has_and_belongs_to_many :profiles
 

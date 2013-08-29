@@ -12,6 +12,9 @@
   <div id='user_bar'>
     <% if logged_in? %>
         <%= link_to 'New Application', new_application_path %> |
+        <% if admin? %>
+            <%= link_to 'Add User', new_user_path %> |
+        <% end %>
         <%= link_to 'Edit Password', edit_user_path(current_user) %> |
         <%= link_to 'Logout', logout_path %>
     <% else %>

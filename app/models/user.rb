@@ -1,10 +1,12 @@
 require 'digest'
 
 class User < ActiveRecord::Base
-  attr_accessible :name, :password
+  attr_accessible :name, :password, :profile_attributes
   attr_accessor :password
 
   has_one :profile
+
+  accepts_nested_attributes_for :profile
 
   validates :name, :presence => true
   validates :password, :confirmation => true,

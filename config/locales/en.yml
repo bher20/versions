@@ -60,3 +60,5 @@ en:
     create_success: Role was successfully created.
     create_failure: Unable to add role
     destroy_success: Role deleted
+  profiles:
+    create_success: Profile was successfully created
