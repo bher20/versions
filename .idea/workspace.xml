@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063757d2-4bde-4735-807c-35be0e783ad7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130828232418_add_column_url_to_version.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/versions/edit.html.erb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/versions/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/versions/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/application.rb" afterPath="$PROJECT_DIR$/app/models/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/applications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/versions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/versions/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/versions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/versions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/versions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/versions/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/version.rb" afterPath="$PROJECT_DIR$/app/models/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/versions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/versions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377731030810" ignored="false" />
-    <file path="/database.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377701056022" ignored="false" />
+    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377735698901" ignored="false" />
+    <file path="/database.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377736550604" ignored="false" />
     <file path="/20130828144747_create_applications.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705122893" ignored="false" />
     <file path="/20130828152026_create_versions.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377703338066" ignored="false" />
     <file path="/application.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377732831596" ignored="false" />
@@ -31,7 +18,7 @@
     <file path="/profile.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377709732583" ignored="false" />
     <file path="/role.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705464348" ignored="false" />
     <file path="/user.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377707535415" ignored="false" />
-    <file path="/Gemfile" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377726532264" ignored="false" />
+    <file path="/Gemfile" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377736033140" ignored="false" />
     <file path="/seeds.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377732603974" ignored="false" />
     <file path="/routes.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377728507670" ignored="false" />
     <file path="/versions_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377735388109" ignored="false" />
@@ -111,14 +98,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applications_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="applications_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="834" selection-end="841" vertical-scroll-proportion="0.3035413">
+            <state line="41" column="26" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#2044#2076#0" expanded="true" />
                 <element signature="e#2613#2645#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="17" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.84822935">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/versions_helper.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/applications/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/applications/_form.html.erb" />
@@ -157,6 +160,8 @@
         <option value="$PROJECT_DIR$/app/controllers/versions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/versions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/versions/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -776,7 +781,11 @@
       <created>1377731032708</created>
       <updated>1377731032708</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added: URL for versions.">
+      <created>1377735700711</created>
+      <updated>1377735700711</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -846,7 +855,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed: Unneeded parsing in seeds." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added: URL for versions." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -868,6 +877,7 @@
     <MESSAGE value="Changed: Version.number is now a Versionomy object." />
     <MESSAGE value="Changed: Seed file now creates Version.number as a Versionomy object.&#10;Added: New action to applications_controller newer_version." />
     <MESSAGE value="Removed: Unneeded parsing in seeds." />
+    <MESSAGE value="Added: URL for versions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -887,20 +897,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/versions/create.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="93" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -999,11 +995,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="834" selection-end="841" vertical-scroll-proportion="0.3035413">
+        <state line="41" column="26" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#2044#2076#0" expanded="true" />
             <element signature="e#2613#2645#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="46" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="17" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.84822935">
+          <folding />
         </state>
       </provider>
     </entry>

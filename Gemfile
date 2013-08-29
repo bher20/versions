@@ -26,6 +26,8 @@ gem 'uuidtools'
 
 gem 'versionomy'
 
+gem 'execjs'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
