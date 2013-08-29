@@ -6,9 +6,9 @@ class User < ActiveRecord::Base
 
   has_one :profile
 
-  validates :name, :presence => true, :uniqueness => true
+  validates :name, :presence => true
   validates :password, :confirmation => true,
-            :length => { :within => 4..20 },
+            :length => { :minimum => 8 },
             :presence => true,
             :if => :password_required?
 
