@@ -37,7 +37,7 @@ en:
     destroy_success: User deleted
     logout: "Logout"
     login: "Login"
-    edit_registration: "Edit registration"
+    edit_registration: "Edit profile"
     register: "Register"
   sessions:
     name: Name
