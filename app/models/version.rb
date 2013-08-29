@@ -1,5 +1,5 @@
 class Version < ActiveRecord::Base
-  attr_accessible :application_id, :change_log, :number, :comment, :application
+  attr_accessible :application_id, :change_log, :number, :comment, :application, :url
 
   belongs_to :application
 
@@ -39,5 +39,16 @@ class Version < ActiveRecord::Base
       else
         false
       end
+    end
+
+    def to_render_hash
+      tmp_version = {
+        :change_log => self.change_log,
+        :number => self.number.to_s,
+        :created => self.created_at,
+        :url => self.url,
+      }
+
+      return tmp_version
     end
 end

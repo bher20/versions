@@ -4,9 +4,10 @@ class Application < ActiveRecord::Base
   has_many :versions, :order => 'number DESC'
   belongs_to :user
 
-  validates :name, :presence => true
+  validates :name, :presence => true, :uniqueness => true
+  validates :guid, :uniqueness => true
 
-  before_save :generate_guid
+  before_create :generate_guid
 
   def long_title
     "#{name}"
@@ -17,8 +18,8 @@ class Application < ActiveRecord::Base
   end
 
   def generate_guid
-    if self.guid == nil
-      self.guid ||= UUIDTools::UUID.random_create.to_s
+    if self.guid == nil || self.guid.empty?
+      self.guid = UUIDTools::UUID.random_create.to_s
     end
   end
 end

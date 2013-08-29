@@ -1,5 +1,6 @@
 Versions::Application.routes.draw do
   root :to => 'applications#index'
+
   resources :roles
   resources :users
   resources :versions

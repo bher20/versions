@@ -39,6 +39,28 @@ class VersionsController < ApplicationController
     end
   end
 
+  # GET /versions/1/edit
+  def edit
+    @version = Version.find(params[:id])
+    @version.change_log = @version.change_log.join("\n")
+  end
+
+  # PUT /versions/1
+  # PUT /versions/1.json
+  def update
+    @versions = Version.find(params[:id])
+
+    respond_to do |format|
+      if @versions.update_attributes(params[:versions])
+        format.html { redirect_to(@versions, :notice => t('versions.update_success')) }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @version.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   def destroy
     @version = Version.find(params[:id])
     @version.destroy

@@ -15,8 +15,16 @@
 </p>
 
 <p>
+  <b>Download URL:</b>
+  <%= link_to @version.url, @version.url %>
+</p>
+
+<p>
   <b>Change Log:</b>
   <%= simple_format change_log_to_html @version %>
 </p>
 <br />
 <br />
+
+<%= link_to 'Edit', edit_version_path(@version) %> |
+<%= link_to 'Back', @version.application %>

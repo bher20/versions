@@ -50,6 +50,7 @@ en:
     new_version: New version
     create_success: Version was successfully created.
     create_failure: Unable to add version
+    update_success: Version was successfully updated.
     destroy_success: Version deleted
     add: Add
   roles:

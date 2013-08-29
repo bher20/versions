@@ -21,8 +21,10 @@ app = Application.create    :name         => 'Super Cool App',
 
 app.versions.create         :number       => '1.0.0',
                             :change_log   => ['Added: Cool new icon', 'Changed: Cool sounding name'],
-                            :comment      => 'Sweet version'
+                            :comment      => 'Sweet version',
+                            :url          => 'http://example.com/downloads/Super_Cool_App-1.0.0.exe'
 
 app.versions.create         :number       => '1.1.0',
                             :change_log   => ['Added: Cool new icon splash screen'],
-                            :comment      => 'Sweet splash screen version'
+                            :comment      => 'Sweet splash screen version',
+                            :url          => 'http://example.com/downloads/Super_Cool_App-1.1.0.exe'
