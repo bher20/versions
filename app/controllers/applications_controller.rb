@@ -1,4 +1,7 @@
 class ApplicationsController < ApplicationController
+  before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
+
+
   # GET /applications
   # GET /applications.json
   def index
