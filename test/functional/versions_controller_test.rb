@@ -24,8 +24,8 @@ class VersionsControllerTest < ActionController::TestCase
     assert_redirected_to version_path(assigns(:version))
   end
 
-  test "should show version" do
-    get :show, id: @version
+  test "should index version" do
+    get :index, id: @version
     assert_response :success
   end
 

@@ -19,7 +19,7 @@ class ApplicationsController < ApplicationController
     @application = Application.find_by_guid(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # indexx.html.erb
       format.json { render json: @application }
     end
   end

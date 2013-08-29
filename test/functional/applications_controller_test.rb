@@ -24,8 +24,8 @@ class ApplicationsControllerTest < ActionController::TestCase
     assert_redirected_to application_path(assigns(:application))
   end
 
-  test "should show application" do
-    get :show, id: @application
+  test "should index application" do
+    get :index, id: @application
     assert_response :success
   end
 

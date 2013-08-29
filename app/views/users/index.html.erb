@@ -1,0 +1,35 @@
+<p id='notice'><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @application.name %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @application.comment %>
+</p>
+
+<p>
+  <b>Guid:</b>
+  <%= @application.guid %>
+</p>
+<br />
+<br />
+
+
+<h3>Versions
+<span class='actions'>
+    <%= link_to 'New', new_application_version_path(@application, :format => :js),
+                :remote => true, :id => 'new_version_link' %>
+</span></h3>
+
+<div id='versions'>
+  <%= render @application.versions %>
+</div>
+
+<br />
+<br />
+
+<%= link_to 'Edit', edit_application_path(@application) %> |
+<%= link_to 'Back', applications_path %>
