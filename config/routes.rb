@@ -1,4 +1,6 @@
 Versions::Application.routes.draw do
+  devise_for :users
+
   root :to => 'applications#index'
 
   resources :roles

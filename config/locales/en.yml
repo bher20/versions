@@ -22,7 +22,7 @@ en:
   applications:
     editing_application: Editing Applicaiton
     listing_applications: Listing Applicaitons
-    new_application: New Applicaiton
+    new_application: New applicaiton
     application: application
     create_success: Applicaiton was successfully created.
     update_success: Applicaiton was successfully updated.
@@ -35,6 +35,10 @@ en:
     create_success: User successfully added.
     update_success: Updated user information successfully.
     destroy_success: User deleted
+    logout: "Logout"
+    login: "Login"
+    edit_registration: "Edit registration"
+    register: "Register"
   sessions:
     name: Name
     password: Password
@@ -62,3 +66,5 @@ en:
     destroy_success: Role deleted
   profiles:
     create_success: Profile was successfully created
+  layouts:
+    footer: A version management web service &copy; Bherville 2013

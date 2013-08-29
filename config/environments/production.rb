@@ -65,16 +65,5 @@ Versions::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # Email configuration
-  config.action_mailer.raise_delivery_errors = true
-
-  # Gmail SMTP server setup
-  ActionMailer::Base.smtp_settings = {
-      :address => "smtp.gmail.com",
-      :enable_starttls_auto => true,
-      :port => 587,
-      :authentication => :plain,
-      :user_name => "beginningrails@gmail.com",
-      :password => 'pleasechange'
-  }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
