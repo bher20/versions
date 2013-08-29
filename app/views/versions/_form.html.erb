@@ -1,5 +1,5 @@
 <%= form_for(@version) do |f| %>
-  <% if @version.errors.any? %>
+    <% if @version.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@version.errors.count, "error") %> prohibited this version from being saved:</h2>
 
@@ -9,7 +9,7 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
 
     <div class="field">
       <%= f.label :number %><br />
