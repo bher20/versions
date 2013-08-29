@@ -3,21 +3,17 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Latest Version</th>
     <th>Comment</th>
-    <th>Guid</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
   </tr>
 
 <% @applications.each do |application| %>
   <tr>
-    <td><%= application.name %></td>
+    <td><%= link_to application.name, application %></td>
+    <td><%= link_to application.versions.first.number, application.versions.first %></td>
     <td><%= application.comment %></td>
-    <td><%= application.guid %></td>
-    <td><%= link_to 'Show', application %></td>
-    <td><%= link_to 'Edit', edit_application_path(application) %></td>
-    <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Edit', edit_application_path(application) %> <%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
