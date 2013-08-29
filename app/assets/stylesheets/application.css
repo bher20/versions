@@ -10,6 +10,8 @@
  *
  *= require_self
  *= require_tree .
+ *
+ * CSS based on CSS supplied in Beginning Rails 3, Updated, 2010 Apress by Cloves Carneiro Jr. and Rida Al Barazi
  */
 * {
     margin: 0 auto;
@@ -55,7 +57,7 @@ a:hover {
 }
 
 #header {
-    font-family:"Myriad Web Pro",Helvetica,Arial,sans-serif;
+    font-family:"PT Sans Narrow",Helvetica,Arial,sans-serif;
     letter-spacing: 1px;
     border-bottom: 5px solid #333333;
     color:#333333;
