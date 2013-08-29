@@ -1,6 +1,4 @@
 class ApplicationsController < ApplicationController
-  before_filter :authenticate, :except => [:index, :show, :get_latest_version, :newer_version]
-
   # GET /applications
   # GET /applications.json
   def index
