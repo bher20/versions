@@ -3,22 +3,12 @@ Versions::Application.routes.draw do
 
   root :to => 'applications#index'
 
-  resources :roles
-  resources :users do
-    resource :profile
-  end
   resources :versions
   resources :applications do
     get 'get_latest_version'
     get 'newer_version'
     resources :versions
   end
-
-  resource :session
-
-
-  match '/login' => 'sessions#new', :as => 'login'
-  match '/logout' => 'sessions#destroy', :as => 'logout'
 
 
 
