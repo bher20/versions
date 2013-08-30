@@ -11,7 +11,7 @@
 <% @applications.each do |application| %>
   <tr>
     <td><%= link_to application.name, application %></td>
-    <td><%= link_to application.versions.first.number, application.versions.first %></td>
+    <td><%= link_to application.versions.first!.number, application.versions.first %></td>
     <td><%= application.comment %></td>
     <td><%= link_to 'Edit', edit_application_path(application) %> <%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>

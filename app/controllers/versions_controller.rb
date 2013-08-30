@@ -20,7 +20,7 @@ class VersionsController < ApplicationController
     @version = Version.find(params[:id])
 
     respond_to do |format|
-      format.html # indexx.html.erb
+      format.html # index.html.erb
       format.json { render json: version }
     end
   end
@@ -73,6 +73,6 @@ class VersionsController < ApplicationController
 
   private
   def load_application
-    @application = Application.find_by_guid(params[:application_id])
+    @application = Application.find(params[:application_id])
   end
 end
