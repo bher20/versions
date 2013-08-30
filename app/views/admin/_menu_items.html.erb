@@ -1,0 +1,3 @@
+<% if current_user.try(:admin?) %>
+  <%= link_to t('admin.administration'), admin_users_path %> |
+<% end %>

@@ -10,6 +10,10 @@ Versions::Application.routes.draw do
     resources :versions
   end
 
+  namespace :admin do
+    match '/' => 'users#index'
+    resources :users
+  end
 
 
   # The priority is based upon order of creation:

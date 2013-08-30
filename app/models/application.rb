@@ -2,7 +2,7 @@ class Application < ActiveRecord::Base
   attr_accessible :comment, :guid, :name, :user, :user_id
 
   has_many :versions, :order => 'number DESC'
-  belongs_to :user
+  #belongs_to :user
 
   validates :name, :presence => true, :uniqueness => true
   validates :guid, :uniqueness => true
@@ -11,10 +11,6 @@ class Application < ActiveRecord::Base
 
   def long_title
     "#{name}"
-  end
-
-  def to_param  # overridden
-    guid
   end
 
   def generate_guid

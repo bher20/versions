@@ -1,6 +1,6 @@
 class ApplicationsController < ApplicationController
-  before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
-
+  #before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
+  load_and_authorize_resource
 
   # GET /applications
   # GET /applications.json
@@ -16,16 +16,16 @@ class ApplicationsController < ApplicationController
   # GET /applications/1
   # GET /applications/1.json
   def show
-    @application = Application.find_by_guid(params[:id])
+    @application = Application.find(params[:id])
 
     respond_to do |format|
-      format.html # indexx.html.erb
+      format.html # index.html.erb
       format.json { render json: @application }
     end
   end
 
   def get_latest_version
-    @application = Application.find_by_guid(params[:application_id])
+    @application = Application.find(params[:application_id])
     version = @application.versions.first!
 
     respond_to do |format|
@@ -39,7 +39,7 @@ class ApplicationsController < ApplicationController
   end
 
   def newer_version
-    @application = Application.find_by_guid(params[:application_id])
+    @application = Application.find(params[:application_id])
     supplied_version = params[:version]
 
     newer = nil
@@ -72,7 +72,7 @@ class ApplicationsController < ApplicationController
 
   # GET /applications/1/edit
   def edit
-    @application = Application.find_by_guid(params[:id])
+    @application = Application.find(params[:id])
   end
 
   # POST /applications
@@ -94,7 +94,7 @@ class ApplicationsController < ApplicationController
   # PUT /applications/1
   # PUT /applications/1.json
   def update
-    @application = Application.find_by_guid(params[:id])
+    @application = Application.find(params[:id])
 
     respond_to do |format|
       if @application.update_attributes(params[:application])
@@ -110,7 +110,7 @@ class ApplicationsController < ApplicationController
   # DELETE /applications/1
   # DELETE /applications/1.json
   def destroy
-    @application = Application.find_by_guid(params[:id])
+    @application = Application.find(params[:id])
     @application.destroy
 
     respond_to do |format|

@@ -5,12 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-admin = User.new                :username       => 'admin',
-                                :password       => 'secret'
+registered_role = Role.create   :name           => :registered
+admin_role = Role.create        :name           => :admin
 
+admin = User.new                :username       => 'admin',
+                                :password       => 'secret01',
+                                :email          => 'admin@example.com'
+
+admin.roles.push admin_role
 admin.skip_confirmation!
-admin.update_attribute :admin, true
 admin.save
+
+regular = User.new             :username       => 'user',
+                               :password       => 'secret02',
+                               :email          => 'user@example.com'
+
+regular.roles.push registered_role
+regular.skip_confirmation!
+regular.save
 
 app = Application.create        :name           => 'Super Cool App',
                                 :comment        => 'This app is so cool!'

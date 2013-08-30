@@ -1,6 +1,7 @@
 class VersionsController < ApplicationController
   before_filter :load_application, :except => [:destroy, :show, :index]
-  before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
+  #before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
+  load_and_authorize_resource
 
   # GET /versions
   # GET /versions.json

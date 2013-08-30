@@ -4,7 +4,6 @@
 en:
   general:
     are_you_sure: Are you sure?
-
     back: Back
     cancel: Cancel
     create: Create
@@ -39,6 +38,12 @@ en:
     login: "Login"
     edit_registration: "Edit profile"
     register: "Register"
+    make_administrator: "Make Administrator"
+    make_normal_user: Make Normal User
+    email: Email
+    username: Username
+    password: Password
+    password_confirmation: Password Confirmation
   sessions:
     name: Name
     password: Password
@@ -64,7 +69,12 @@ en:
     create_success: Role was successfully created.
     create_failure: Unable to add role
     destroy_success: Role deleted
+    registered_role: Registered
+    admin_role: Admin
   profiles:
     create_success: Profile was successfully created
   layouts:
     footer: A version management web service &copy; Bherville 2013
+  admin:
+    manage_users: "Manage Users"
+    administration: Administratation
