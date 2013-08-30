@@ -1,5 +1,6 @@
 class ApplicationsController < ApplicationController
   #before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
+  #load_and_authorize_resource :except => [:show]
   load_and_authorize_resource
 
   # GET /applications

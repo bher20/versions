@@ -16,6 +16,8 @@ Versions::Application.routes.draw do
   end
 
 
+  match "/applications/:guid" => "applications#show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
