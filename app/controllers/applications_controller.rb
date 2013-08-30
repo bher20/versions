@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  load_and_authorize_resource :except => [:get_latest_version, :newer_version]
+  load_and_authorize_resource
 
   # GET /applications
   # GET /applications.json

@@ -42,13 +42,11 @@ class Version < ActiveRecord::Base
     end
 
     def to_render_hash
-      tmp_version = {
+      {
         :change_log => self.change_log,
         :number => self.number.to_s,
         :created => self.created_at,
         :url => self.url,
       }
-
-      return tmp_version
     end
 end

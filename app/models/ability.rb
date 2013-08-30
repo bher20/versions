@@ -11,6 +11,8 @@ class Ability
       can :manage, Version
     else
       can :read, :all
+      can :get_latest_version, Application
+      can :newer_version, Application
     end
     # Define abilities for the passed in user here. For example:
     #
