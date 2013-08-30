@@ -3,15 +3,20 @@
 <table>
   <tr>
     <th>Name</th>
-   <!--  <th>Latest Version</th> -->
+    <th>Latest Version</th>
     <th>Comment</th>
     <th>Actions</th>
   </tr>
 
 <% @applications.each do |application| %>
+  <% latest_version = application.versions.first %>
   <tr>
     <td><%= link_to application.name, application %></td>
-    <td><%# link_to application.versions.first!.number, application.versions.first %></td>
+    <% if latest_version != nil %>
+        <td><%= link_to latest_version.number, latest_version %></td>
+    <% else %>
+        <td><%= t('version.unavailable') %></td>
+    <% end %>
     <td><%= application.comment %></td>
     <td><%= link_to 'Edit', edit_application_path(application) %> <%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>

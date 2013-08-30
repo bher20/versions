@@ -78,3 +78,5 @@ en:
   admin:
     manage_users: "Manage Users"
     administration: Administratation
+  version:
+    unavailable: Not available
