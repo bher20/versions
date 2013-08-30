@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063757d2-4bde-4735-807c-35be0e783ad7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin_ability.rb" afterPath="$PROJECT_DIR$/app/models/admin_ability.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/applications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831596646" ignored="false" />
+    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831732626" ignored="false" />
     <file path="/database.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377736550604" ignored="false" />
     <file path="/20130828144747_create_applications.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705122893" ignored="false" />
     <file path="/20130828152026_create_versions.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377703338066" ignored="false" />
@@ -30,7 +31,7 @@
     <file path="/fail_create.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377717310085" ignored="false" />
     <file path="/delete.js.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377717448624" ignored="false" />
     <file path="/en.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377823588433" ignored="false" />
-    <file path="/applications_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831726628" ignored="false" />
+    <file path="/applications_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377832015189" ignored="false" />
     <file path="/roles_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377718204605" ignored="false" />
     <file path="/users_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377823765413" ignored="false" />
     <file path="/application_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377830551360" ignored="false" />
@@ -61,7 +62,7 @@
     <file path="/admin.html.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377819910368" ignored="false" />
     <file path="/a.dummy" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377824344770" ignored="false" />
     <file path="/ability.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377826284439" ignored="false" />
-    <file path="/admin_ability.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831510217" ignored="false" />
+    <file path="/admin_ability.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377832007177" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +85,10 @@
       <file leaf-file-name="applications_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5509259">
+            <state line="5" column="8" selection-start="260" selection-end="260" vertical-scroll-proportion="0.13117284">
               <folding>
-                <element signature="e#2115#2147#0" expanded="true" />
-                <element signature="e#2676#2708#0" expanded="true" />
+                <element signature="e#2116#2148#0" expanded="true" />
+                <element signature="e#2677#2709#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,7 +133,7 @@
       <file leaf-file-name="admin_ability.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="57" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+            <state line="6" column="36" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -1055,7 +1056,11 @@
       <created>1377831597866</created>
       <updated>1377831597866</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Change: Attempting to fix the issue where on Heroku user in the admin_ability.rb class is nil.">
+      <created>1377831735314</created>
+      <updated>1377831735314</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1080,7 +1085,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1088,7 +1093,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19103523" sideWeight="0.7006237" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19103523" sideWeight="0.7006237" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2993763" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2993763" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1271,37 +1276,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="66" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="57" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1313,12 +1290,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="66" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5509259">
+        <state line="5" column="8" selection-start="260" selection-end="260" vertical-scroll-proportion="0.13117284">
           <folding>
-            <element signature="e#2115#2147#0" expanded="true" />
-            <element signature="e#2676#2708#0" expanded="true" />
+            <element signature="e#2116#2148#0" expanded="true" />
+            <element signature="e#2677#2709#0" expanded="true" />
           </folding>
         </state>
       </provider>
