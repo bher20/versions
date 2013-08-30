@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063757d2-4bde-4735-807c-35be0e783ad7" name="Default" comment="Fixed: Attempting to fix redirect issue.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130830025514_add_sessions_table.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
+    <list default="true" id="063757d2-4bde-4735-807c-35be0e783ad7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/applications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831351196" ignored="false" />
+    <file path="/Dummy.txt" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831596646" ignored="false" />
     <file path="/database.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377736550604" ignored="false" />
     <file path="/20130828144747_create_applications.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377705122893" ignored="false" />
     <file path="/20130828152026_create_versions.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377703338066" ignored="false" />
@@ -32,7 +30,7 @@
     <file path="/fail_create.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377717310085" ignored="false" />
     <file path="/delete.js.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377717448624" ignored="false" />
     <file path="/en.yml" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377823588433" ignored="false" />
-    <file path="/applications_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377828233580" ignored="false" />
+    <file path="/applications_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831726628" ignored="false" />
     <file path="/roles_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377718204605" ignored="false" />
     <file path="/users_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377823765413" ignored="false" />
     <file path="/application_controller.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377830551360" ignored="false" />
@@ -63,6 +61,7 @@
     <file path="/admin.html.erb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377819910368" ignored="false" />
     <file path="/a.dummy" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377824344770" ignored="false" />
     <file path="/ability.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377826284439" ignored="false" />
+    <file path="/admin_ability.rb" changelist="063757d2-4bde-4735-807c-35be0e783ad7" time="1377831510217" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +81,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="applications_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="applications_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="54" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
+            <state line="21" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5509259">
               <folding>
-                <element signature="e#2088#2120#0" expanded="true" />
-                <element signature="e#2649#2681#0" expanded="true" />
+                <element signature="e#2115#2147#0" expanded="true" />
+                <element signature="e#2676#2708#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_store.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="session_store.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.20987654">
+            <state line="9" column="66" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,7 +132,16 @@
       <file leaf-file-name="admin_ability.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+            <state line="6" column="57" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="59" selection-start="834" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,12 +180,12 @@
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/application.rb" />
-        <option value="$PROJECT_DIR$/app/models/admin_ability.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
+        <option value="$PROJECT_DIR$/app/models/admin_ability.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/applications_controller.rb" />
       </list>
     </option>
   </component>
@@ -1039,7 +1047,15 @@
       <created>1377830575492</created>
       <updated>1377830575492</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changed: Session management to use the db.">
+      <created>1377831375418</created>
+      <updated>1377831375418</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Change: Attempting to fix the issue where on Heroku user in the admin_ability.rb class is nil.">
+      <created>1377831597866</created>
+      <updated>1377831597866</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1129,7 +1145,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed: Attempting to fix redirect issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change: Attempting to fix the issue where on Heroku user in the admin_ability.rb class is nil." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1143,8 +1159,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added: Models and relationships." />
-    <MESSAGE value="Added: CSS and other formatting." />
     <MESSAGE value="Added: Localization." />
     <MESSAGE value="Added: Missing files." />
     <MESSAGE value="Fixed: Javascript adding and deleting of versions." />
@@ -1168,6 +1182,8 @@
     <MESSAGE value="Changed: The main rest find parameter of Applications to be ID again." />
     <MESSAGE value="Updated: admin_abilty now creates a new User if the current one is nil." />
     <MESSAGE value="Fixed: Attempting to fix redirect issue." />
+    <MESSAGE value="Changed: Session management to use the db." />
+    <MESSAGE value="Change: Attempting to fix the issue where on Heroku user in the admin_ability.rb class is nil." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,13 +1208,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/applications/_application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/applications/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1262,19 +1271,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="54" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2088#2120#0" expanded="true" />
-            <element signature="e#2649#2681#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
+    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="9" column="66" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1286,13 +1292,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="14" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
@@ -1300,10 +1299,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/admin_ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.20987654">
+        <state line="6" column="57" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="59" selection-start="834" selection-end="842" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/applications_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5509259">
+          <folding>
+            <element signature="e#2115#2147#0" expanded="true" />
+            <element signature="e#2676#2708#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
