@@ -1,10 +1,17 @@
-<%= div_for version do %>
-    <h3>
-      <%= link_to version.number.to_s, version %>
-    <span class='actions'>
-       <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',
-                   :method => :delete, :remote => true %>
-    </span>
-    </h3>
-    <%= change_log_to_html version %>
-<% end %>
+<tr id="version_<%= version.id%>">
+    <td><%= link_to version.number.to_s, version %></td>
+    <td>
+      <% if version.url.empty?%>
+      <%= "Unavailable" %>
+      <%else %>
+      <%= link_to "Downloads", version.url %>
+      <% end %>
+    </td>
+    <td><%= version.created_at %></td>
+    <td>
+      <% if user_signed_in? %>
+          <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',
+                      :method => :delete, :remote => true %>
+      <% end %>
+    </td>
+<tr>

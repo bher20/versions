@@ -1,5 +1,5 @@
 class VersionsController < ApplicationController
-  before_filter :load_application, :except => [:destroy, :show, :index]
+  before_filter :load_application, :except => [:destroy, :show, :index, :edit, :update]
   #before_filter :authenticate_user!, :only => [:update, :destroy, :create, :new, :edit ]
   load_and_authorize_resource
 
@@ -49,11 +49,11 @@ class VersionsController < ApplicationController
   # PUT /versions/1
   # PUT /versions/1.json
   def update
-    @versions = Version.find(params[:id])
+    @version = Version.find(params[:id])
 
     respond_to do |format|
-      if @versions.update_attributes(params[:versions])
-        format.html { redirect_to(@versions, :notice => t('versions.update_success')) }
+      if @version.update_attributes(params[:version])
+        format.html { redirect_to(@version, :notice => t('versions.update_success')) }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

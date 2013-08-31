@@ -132,6 +132,24 @@ a:hover {
     margin-right: 10px;
 }
 
+#main .show_form {
+    text-indent: 50px;
+}
+
+#main .show_form, h3 {
+    text-indent: 50px;
+    #border-bottom: 1px solid #bbb;
+}
+
+#main .show_form .change_logs {
+    text-indent: 50px;
+}
+
+#main .show_form .versions {
+    text-indent: 50px;
+    text-decoration: underline;
+}
+
 #main form label.check_box_label {
     width: auto;
     display: inline;

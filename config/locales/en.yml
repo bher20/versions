@@ -16,6 +16,7 @@ en:
     title: Versions
     update: Update
     or: or
+    actions: Actions
   application:
     access_denied: Please log in to continue
   applications:
@@ -56,12 +57,15 @@ en:
   versions:
     name: Name
     versions: Versions
+    version: Version
     new_version: New version
     create_success: Version was successfully created.
     create_failure: Unable to add version
     update_success: Version was successfully updated.
     destroy_success: Version deleted
     add: Add
+    download: Download
+    date: Date
   roles:
     name: Name
     comment: Comment

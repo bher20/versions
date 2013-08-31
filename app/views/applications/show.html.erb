@@ -1,35 +1,39 @@
-<p id='notice'><%= notice %></p>
+<h1><%= @application.name %></h1>
 
-<p>
-  <b>Name:</b>
-  <%= @application.name %>
-</p>
+<div class="show_form">
+    <p>
+        <b>Comment:</b>
+        <%= @application.comment %>
+    </p>
+    <p>
+        <b>Guid:</b>
+        <%= @application.guid %>
+    </p>
+    <br />
+    <br />
 
-<p>
-  <b>Comment:</b>
-  <%= @application.comment %>
-</p>
-
-<p>
-  <b>Guid:</b>
-  <%= @application.guid %>
-</p>
-<br />
-<br />
-
-
-<h3>Versions
-<span class='actions'>
-    <%= link_to 'New', new_application_version_path(@application, :format => :js),
-            :remote => true, :id => 'new_version_link' %>
-</span></h3>
-
-<div id='versions'>
-  <%= render @application.versions %>
+    <p>
+        <h3><%= t('versions.versions') %>
+            <span class='actions'>
+               <% if user_signed_in? %>
+                  <%= link_to 'New', new_application_version_path(@application, :format => :js),
+                        :remote => true, :id => 'new_version_link' %>
+               <% end  %>
+            </span>
+        </h3>
+        <table class="change_logs">
+            <th><%= t('versions.version') %></th>
+            <th><%= t('versions.download') %></th>
+            <th><%= t('versions.date') %></th>
+            <th><%= t('general.actions') %></th>
+            <%= render @application.versions %>
+        </table>
+  </p>
 </div>
-
 <br />
 <br />
 
+<% if user_signed_in? %>
 <%= link_to 'Edit', edit_application_path(@application) %> |
+<% end  %>
 <%= link_to 'Back', applications_path %>
