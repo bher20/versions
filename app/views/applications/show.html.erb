@@ -25,7 +25,9 @@
             <th><%= t('versions.version') %></th>
             <th><%= t('versions.download') %></th>
             <th><%= t('versions.date') %></th>
-            <th><%= t('general.actions') %></th>
+            <% if user_signed_in? %>
+                <th><%= t('general.actions') %></th>
+            <% end  %>
             <%= render @application.versions %>
         </table>
   </p>

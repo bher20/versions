@@ -1,5 +1,5 @@
 class Version < ActiveRecord::Base
-  attr_accessible :application_id, :change_log, :number, :comment, :application, :url
+  attr_accessible :application_id, :change_log, :number, :comment, :application, :download_url, :download_size, :download_type
 
   belongs_to :application
 

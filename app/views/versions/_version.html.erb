@@ -1,10 +1,10 @@
 <tr id="version_<%= version.id%>">
     <td><%= link_to version.number.to_s, version %></td>
     <td>
-      <% if version.url.empty?%>
+      <% if version.download_url.empty?%>
       <%= "Unavailable" %>
       <%else %>
-      <%= link_to "Downloads", version.url %>
+      <%= link_to version.download_type, version.download_url %> <%= "(#{version.download_size})" %>
       <% end %>
     </td>
     <td><%= version.created_at %></td>

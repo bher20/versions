@@ -7,8 +7,19 @@
     <b>Comment:</b>
     <%= @version.comment %>
     <br />
-    <b>Download URL:</b>
-    <%= link_to @version.url, @version.url %>
+    <span class="version_download">
+        <b>Download URL:</b>
+        <%= link_to @version.download_url, @version.download_url %>
+        <br />
+        <span class="version_download_stats">
+            Type:
+            <%= @version.download_type %>
+            <br />
+            Size:
+            <%= @version.download_size %>
+        </span>
+    </span>
+    <br />
     <br />
     <br />
     <b>Change Log:</b>

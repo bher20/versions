@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130830025514) do
+ActiveRecord::Schema.define(:version => 20130831004334) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -80,7 +80,9 @@ ActiveRecord::Schema.define(:version => 20130830025514) do
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
     t.integer  "application_id"
-    t.string   "url"
+    t.string   "download_url"
+    t.string   "download_type"
+    t.string   "download_size"
   end
 
 end

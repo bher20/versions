@@ -150,6 +150,10 @@ a:hover {
     text-decoration: underline;
 }
 
+#main .show_form .version_download .version_download_stats {
+    text-indent: 100px;
+}
+
 #main form label.check_box_label {
     width: auto;
     display: inline;
