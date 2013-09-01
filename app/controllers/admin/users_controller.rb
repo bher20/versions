@@ -1,5 +1,6 @@
 class Admin::UsersController < Admin::AdminController
-  #load_and_authorize_resource
+  load_and_authorize_resource
+
   # GET /users
   # GET /users.json
   def index
@@ -45,7 +46,11 @@ class Admin::UsersController < Admin::AdminController
     @user.attributes = params[:user]
     @user.role_ids = params[:user][:role_ids] if params[:user]
     @user = User.new(params[:user])
-    @user.skip_confirmation!
+
+    if !params[t('users.force_confirmnation')]
+      @user.skip_confirmation!
+    end
+
     respond_to do |format|
       if @user.save
         flash[:notice] = flash[:notice].to_a.concat @user.errors.full_messages

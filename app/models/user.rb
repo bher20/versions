@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   end
 
   def role?(role)
-    !!self.roles.find_by_name(role.to_s.camelize)
+    !!self.roles.find_by_name(role.to_s)
   end
 
   def admin?

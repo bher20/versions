@@ -45,6 +45,8 @@ en:
     username: Username
     password: Password
     password_confirmation: Password Confirmation
+    force_password_reset: "Force Password Reset"
+    force_confirmnation: "Force User Confirmation"
   sessions:
     name: Name
     password: Password
