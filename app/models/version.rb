@@ -46,7 +46,9 @@ class Version < ActiveRecord::Base
         :change_log => self.change_log,
         :number => self.number.to_s,
         :created => self.created_at,
-        :url => self.url,
+        :download_url => self.download_url,
+        :download_size => self.download_size,
+        :download_type => self.download_type,
       }
     end
 end
