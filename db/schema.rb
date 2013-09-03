@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130831004334) do
+ActiveRecord::Schema.define(:version => 20130901143548) do
 
   create_table "applications", :force => true do |t|
     t.string   "name"
@@ -75,10 +75,10 @@ ActiveRecord::Schema.define(:version => 20130831004334) do
 
   create_table "versions", :force => true do |t|
     t.string   "number"
-    t.string   "change_log"
+    t.text     "change_log",     :limit => 2147483647
     t.text     "comment"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.integer  "application_id"
     t.string   "download_url"
     t.string   "download_type"

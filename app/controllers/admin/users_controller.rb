@@ -47,10 +47,6 @@ class Admin::UsersController < Admin::AdminController
     @user.role_ids = params[:user][:role_ids] if params[:user]
     @user = User.new(params[:user])
 
-    if !params[t('users.force_confirmnation')]
-      @user.skip_confirmation!
-    end
-
     respond_to do |format|
       if @user.save
         flash[:notice] = flash[:notice].to_a.concat @user.errors.full_messages
