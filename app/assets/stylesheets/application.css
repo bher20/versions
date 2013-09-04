@@ -132,16 +132,11 @@ a:hover {
     margin-right: 10px;
 }
 
-#main .show_form {
-    text-indent: 50px;
-}
-
-#main .show_form, h3 {
-    text-indent: 50px;
-    #border-bottom: 1px solid #bbb;
-}
-
 #main .show_form .change_logs {
+    color: rgb(0,0,0);
+}
+
+#main .show_form .attribute_list {
     text-indent: 50px;
 }
 
@@ -206,6 +201,21 @@ a:hover {
 }
 
 #main h3:hover .actions{
+    display: inline;
+}
+
+#main h1 {
+    padding-top: 10px;
+    height: 20px;
+}
+
+#main h1 .actions{
+    display:none;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#main h1:hover .actions{
     display: inline;
 }
 

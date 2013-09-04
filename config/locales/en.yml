@@ -47,6 +47,7 @@ en:
     password_confirmation: Password Confirmation
     force_password_reset: "Force Password Reset"
     force_confirmnation: "Force User Confirmation"
+    roles: Roles
   sessions:
     name: Name
     password: Password

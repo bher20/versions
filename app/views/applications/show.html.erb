@@ -1,36 +1,34 @@
 <h1><%= @application.name %></h1>
 
 <div class="show_form">
-    <p>
-        <b>Comment:</b>
-        <%= @application.comment %>
-    </p>
-    <p>
-        <b>Guid:</b>
-        <%= @application.guid %>
-    </p>
+    <b>Comment:</b>
+    <%= @application.comment %>
+    <br />
+    <b>Guid:</b>
+    <%= @application.guid %>
     <br />
     <br />
-
-    <p>
-        <h3><%= t('versions.versions') %>
-            <span class='actions'>
-               <% if user_signed_in? %>
-                  <%= link_to 'New', new_application_version_path(@application, :format => :js),
-                        :remote => true, :id => 'new_version_link' %>
-               <% end  %>
-            </span>
-        </h3>
-        <table class="change_logs">
-            <th><%= t('versions.version') %></th>
-            <th><%= t('versions.download') %></th>
-            <th><%= t('versions.date') %></th>
-            <% if user_signed_in? %>
-                <th><%= t('general.actions') %></th>
-            <% end  %>
+    <h3><%= t('versions.versions') %>:
+        <span class='actions'>
+           <% if user_signed_in? %>
+              <%= link_to 'New', new_application_version_path(@application, :format => :js),
+                    :remote => true, :id => 'new_version_link' %>
+           <% end  %>
+        </span>
+    </h3>
+    <div class="change_logs">
+        <table>
+            <tr>
+                <th><%= t('versions.version') %></th>
+                <th><%= t('versions.download') %></th>
+                <th><%= t('versions.date') %></th>
+                <% if user_signed_in? %>
+                    <th><%= t('general.actions') %></th>
+                <% end  %>
+            </tr>
             <%= render @application.versions %>
         </table>
-  </p>
+  </div>
 </div>
 <br />
 <br />

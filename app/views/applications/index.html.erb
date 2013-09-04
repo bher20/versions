@@ -1,4 +1,10 @@
-<h1>Listing applications</h1>
+<h1>Listing applications
+    <span class='actions'>
+       <% if user_signed_in? %>
+          <%= link_to 'New', new_application_path, :id => 'new_version_link' %>
+       <% end  %>
+    </span>
+</h1>
 
 <table>
   <tr>

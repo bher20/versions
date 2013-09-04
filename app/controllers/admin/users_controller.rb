@@ -83,12 +83,27 @@ class Admin::UsersController < Admin::AdminController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    success = false
+
     @user = User.find(params[:id])
-    @user.destroy
+
+    if @user.id != current_user.id
+      #@user.destroy
+      success = true
+    else
+      logger.warn('ERROR: ' + t('users.cannot_delete_own_account') )
+      flash[:alert] = t('users.cannot_delete_own_account')
+    end
+
 
     respond_to do |format|
-      format.html { redirect_to admin_users_url }
-      format.json { head :ok }
+      if success
+        format.html { redirect_to admin_users_url }
+        format.json { head :ok }
+      else
+        format.html { redirect_to admin_users_url }
+        format.json { render :json => t('users.cannot_delete_own_account'), :status => :unprocessable_entity }
+      end
     end
   end
 end
