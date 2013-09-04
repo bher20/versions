@@ -7,7 +7,7 @@
       <%= link_to version.download_type, version.download_url %> <%= "(#{version.download_size})" %>
       <% end %>
     </td>
-    <td><%= version.created_at %></td>
+    <td><%= version.created_at.strftime("%m/%d/%Y %I:%M:%S %p") %></td>
     <td>
       <% if user_signed_in? %>
           <%= link_to 'Delete', [@application, version], :confirm => 'Are you sure?',

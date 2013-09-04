@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/versions/_version.html.erb" afterPath="$PROJECT_DIR$/app/views/versions/_version.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378253876065" ignored="false" />
-    <file path="/index.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378250992201" ignored="false" />
+    <file path="/Dummy.txt" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378254086170" ignored="false" />
+    <file path="/index.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378254415678" ignored="false" />
     <file path="/users_controller.rb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378228885165" ignored="false" />
     <file path="/temp.yml" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378252650642" ignored="false" />
     <file path="E:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/session_store.rb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378228278523" ignored="false" />
@@ -21,6 +22,7 @@
     <file path="/users_helper.rb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378250251230" ignored="false" />
     <file path="/_versions.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378251042138" ignored="false" />
     <file path="/application.css" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378252476672" ignored="false" />
+    <file path="/_version.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378254376601" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +42,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/admin/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#2382#2418#0" expanded="true" />
-                <element signature="e#2443#2479#0" expanded="true" />
-                <element signature="e#2720#2756#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/users/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/applications/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="430" selection-end="430" vertical-scroll-proportion="0.35494506">
+            <state line="6" column="3" selection-start="197" selection-end="197" vertical-scroll-proportion="0.14380166">
               <folding />
             </state>
           </provider>
@@ -87,13 +76,14 @@
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/app/helpers/UsersHelper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/applications/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_versions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/versions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/applications/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/admin/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/admin/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/versions/_version.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/applications/index.html.erb" />
       </list>
     </option>
   </component>
@@ -728,7 +718,11 @@
       <created>1378253877741</created>
       <updated>1378253877741</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removed: ID from the table in admin/users#index.">
+      <created>1378254087806</created>
+      <updated>1378254087806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -740,11 +734,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18249734" sideWeight="0.6862955" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18249734" sideWeight="0.68295217" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3137045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31798714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3170478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -797,7 +791,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated: Removed indent." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed: ID from the table in admin/users#index." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -814,6 +808,7 @@
     <MESSAGE value="Removing: Failed attempt at forcing users to change password on first login." />
     <MESSAGE value="Updated: CSS and other form formatting." />
     <MESSAGE value="Updated: Removed indent." />
+    <MESSAGE value="Removed: ID from the table in admin/users#index." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,13 +816,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/versions/new.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/versions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -838,13 +826,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/applications/_application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/applications/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
@@ -891,38 +872,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="83" selection-start="2364" selection-end="2364" vertical-scroll-proportion="1.7339743">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="31" selection-start="645" selection-end="645" vertical-scroll-proportion="-15.038462">
-          <folding>
-            <element signature="n#t(&quot;users.email&quot;)#0;n#!!top" expanded="true" />
-            <element signature="n#t('users.registered_on')#0;n#!!top" expanded="true" />
-            <element signature="n#t(&quot;users.roles&quot;)#0;n#!!top" expanded="true" />
-            <element signature="e#535#560#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/applications/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="68" selection-start="259" selection-end="259" vertical-scroll-proportion="-7.1923075">
           <folding>
             <element signature="n#t('versions.download')#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/versions/_version.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,9 +892,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="51" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.48811412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="47" selection-start="80" selection-end="94" vertical-scroll-proportion="0.053882726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="430" selection-end="430" vertical-scroll-proportion="0.35494506">
+        <state line="21" column="73" selection-start="575" selection-end="648" vertical-scroll-proportion="0.5785124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.3090909">
+          <folding>
+            <element signature="n#t('users.registered_on')#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/versions/_version.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="238" selection-end="238" vertical-scroll-proportion="0.16859505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/applications/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="197" selection-end="197" vertical-scroll-proportion="0.14380166">
           <folding />
         </state>
       </provider>

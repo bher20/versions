@@ -5,29 +5,31 @@
        <% end  %>
     </span>
 </h1>
-<table class="table table-striped">
- <thead>
-  <tr>
-    <th><%= t("users.username") %></th>
-    <th><%= t("users.email") %></th>
-    <th>Created at</th>
-    <th>Actions</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @users.each do |user| -%>
-   <tr>
-    <td><%= link_to user.username, admin_user_path(user) %></td>
-    <td><%= user.email %></td>
-    <td><%= user.created_at %></td>
-    <td>
-      <%= link_to "Show", admin_user_path(user) %>
-      <%= link_to "Edit", edit_admin_user_path(user) %>
-      <% if user.id != current_user.id %>
-        <%= link_to "Destroy", admin_user_path(user), :method => :delete, :confirm => "#{t('general.are_you_sure')}" %>
-      <% end %>
-    </td>
-    </tr>
-    <% end -%>
-   </tbody>
-</table>
+<span class="users_list">
+    <table>
+     <thead>
+      <tr>
+        <th><%= t("users.username") %></th>
+        <th><%= t("users.email") %></th>
+        <th>Created at</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @users.each do |user| -%>
+       <tr>
+        <td><%= link_to user.username, admin_user_path(user) %></td>
+        <td><%= user.email %></td>
+        <td><%= user.created_at.strftime("%m/%d/%Y %I:%M:%S %p") %></td>
+        <td>
+          <%= link_to "Show", admin_user_path(user) %>
+          <%= link_to "Edit", edit_admin_user_path(user) %>
+          <% if user.id != current_user.id %>
+            <%= link_to "Destroy", admin_user_path(user), :method => :delete, :confirm => "#{t('general.are_you_sure')}" %>
+          <% end %>
+        </td>
+        </tr>
+        <% end -%>
+       </tbody>
+    </table>
+</span>
