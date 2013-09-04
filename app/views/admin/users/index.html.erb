@@ -8,7 +8,6 @@
 <table class="table table-striped">
  <thead>
   <tr>
-    <th>ID</th>
     <th><%= t("users.username") %></th>
     <th><%= t("users.email") %></th>
     <th>Created at</th>
@@ -18,8 +17,7 @@
   <tbody>
   <% @users.each do |user| -%>
    <tr>
-    <td><%= user.id %></td>
-     <td><%= link_to user.username, admin_user_path(user) %></td>
+    <td><%= link_to user.username, admin_user_path(user) %></td>
     <td><%= user.email %></td>
     <td><%= user.created_at %></td>
     <td>
