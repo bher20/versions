@@ -1,11 +1,14 @@
 <h1><%= @application.name %></h1>
 
 <div class="show_form">
+    <b>Guid:</b>
+    <%= @application.guid %>
+    <br />
     <b>Comment:</b>
     <%= @application.comment %>
     <br />
-    <b>Guid:</b>
-    <%= @application.guid %>
+    <b>Created On:</b>
+    <%= @application.created_at.strftime("%m/%d/%Y %I:%M:%S %p") %>
     <br />
     <br />
     <h3><%= t('versions.versions') %>:

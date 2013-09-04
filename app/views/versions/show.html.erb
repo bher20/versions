@@ -7,6 +7,9 @@
     <b>Comment:</b>
     <%= @version.comment %>
     <br />
+    <b>Created On:</b>
+    <%= @version.created_at.strftime("%m/%d/%Y %I:%M:%S %p") %>
+    <br />
     <span class="version_download">
         <b>Download URL:</b>
         <%= link_to @version.download_url, @version.download_url %>
