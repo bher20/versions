@@ -88,7 +88,7 @@ class Admin::UsersController < Admin::AdminController
     @user = User.find(params[:id])
 
     if @user.id != current_user.id
-      #@user.destroy
+      @user.destroy
       success = true
     else
       logger.warn('ERROR: ' + t('users.cannot_delete_own_account') )
