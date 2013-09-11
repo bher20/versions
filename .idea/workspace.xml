@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versions.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378929221120" ignored="false" />
+    <file path="/Dummy.txt" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378931543543" ignored="false" />
     <file path="/index.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378254415678" ignored="false" />
     <file path="/users_controller.rb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378228885165" ignored="false" />
     <file path="/temp.yml" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378252650642" ignored="false" />
@@ -22,6 +22,7 @@
     <file path="/_versions.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378251042138" ignored="false" />
     <file path="/application.css" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378252476672" ignored="false" />
     <file path="/_version.html.erb" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378254376601" ignored="false" />
+    <file path="/.travis.yml" changelist="7c00385c-d90b-426b-9f1d-9f4ee35dfb83" time="1378931645693" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
       <file leaf-file-name="_versions.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_versions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="75" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,10 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="24" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.11219512">
+            <state line="77" column="24" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/devise/menu/_registration_items.html.erb" />
         <option value="E:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/transactions.rb" />
         <option value="E:/Ruby200/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/base.rb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
@@ -129,6 +138,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_versions.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -828,7 +838,11 @@
       <created>1378255031743</created>
       <updated>1378255031743</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed: Users can now be deleted by an administrator.">
+      <created>1378929368936</created>
+      <updated>1378929368936</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -839,10 +853,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18890075" sideWeight="0.6862955" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3137045" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19103523" sideWeight="0.6873662" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31330472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31263384" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42719486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -897,7 +911,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added: New application link back to the header." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed: Users can now be deleted by an administrator." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -918,6 +932,7 @@
     <MESSAGE value="Changed: The format  of the date displayed in version information table." />
     <MESSAGE value="Added: Created version to the show forms to applications and versions." />
     <MESSAGE value="Added: New application link back to the header." />
+    <MESSAGE value="Changed: Users can now be deleted by an administrator." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,11 +947,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-3.2.13/lib/action_view/helpers/rendering_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="929" selection-end="929" vertical-scroll-proportion="0.31828195" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="2" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0561674" />
@@ -1005,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_versions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="75" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1019,7 +1029,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="24" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.11219512">
+        <state line="77" column="24" selection-start="2062" selection-end="2062" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
