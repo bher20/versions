@@ -3,6 +3,5 @@ rvm:
   - "2.0.0"
 script:
   - cp config/database.yml.example config/database.yml
-  - gem install mysql -i vendor/ --no-ri --no-rdoc
   - mysql -u root -e "CREATE DATABASE versions_test"
   - mysql -u root -e "GRANT ALL PRIVILEGES ON versions_test.* TO 'versions_user'@'localhost'"
