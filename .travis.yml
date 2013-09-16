@@ -1,9 +1,6 @@
 language: ruby
 rvm:
   - "2.0.0"
-before_install:
-  - gem update --system 1.3.7
-  - gem --version
 script:
   - cp config/database.yml.example config/database.yml
   - gem install mysql -i vendor/ --no-ri --no-rdoc
