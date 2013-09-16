@@ -1,1 +1,15 @@
-script: "ls"
+language: ruby
+rvm:
+  - "2.0.0"
+before_install:
+  - gem update --system 1.3.7
+  - gem --version
+before_script:
+  - cp config/database.yml.example config/database.yml
+  - cp spec/spec.opts.example spec/spec.opts
+  - gem install mysql -i vendor/ --no-ri --no-rdoc
+  - mysql -u root -e "CREATE DATABASE versions_test"
+  - mysql -u root -e "GRANT ALL PRIVILEGES ON versions_test.* TO 'versions_user'@'localhost'"
+  - rake db:migrate
+script:
+  - rake spec
